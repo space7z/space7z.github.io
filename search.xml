@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>自动化脚本编程之CMD/DOS命令行</title>
+      <link href="/2023/08/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E4%B9%8BCMD-DOS%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+      <url>/2023/08/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E4%B9%8BCMD-DOS%E5%91%BD%E4%BB%A4%E8%A1%8C/</url>
+      
+        <content type="html"><![CDATA[<h1 id="cmd命令"><a href="#cmd命令" class="headerlink" title="cmd命令"></a>cmd命令</h1><h2 id="cmd变量"><a href="#cmd变量" class="headerlink" title="cmd变量"></a>cmd变量</h2><p>设置变量</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set 变量名 = 值</span><br></pre></td></tr></table></figure><p>删除变量</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set 变量名=</span><br></pre></td></tr></table></figure><p>获取变量</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set 变量名</span><br></pre></td></tr></table></figure><br><p>运算</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set /a 1+2</span><br><span class="line">set /a var = 1+2</span><br></pre></td></tr></table></figure><br><p>bat脚本文件</p><p>运算进行输出</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">set</span> /a var=<span class="number">4</span>*<span class="number">5</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">%var%</span></span><br><span class="line"><span class="built_in">pause</span> &gt;<span class="built_in">nul</span></span><br></pre></td></tr></table></figure><br><p>接收用户输入</p><p>需要编码为ansi</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">set</span> /p var=请输入一个数字：</span><br><span class="line"><span class="built_in">echo</span> 您输入的数字是：<span class="variable">%var%</span></span><br><span class="line"><span class="built_in">pause</span> &gt;<span class="built_in">nul</span></span><br></pre></td></tr></table></figure><br><h2 id="自定义窗口"><a href="#自定义窗口" class="headerlink" title="自定义窗口"></a>自定义窗口</h2><p>设置窗口标题</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">title</span> <span class="built_in">cmd</span> xxx</span><br></pre></td></tr></table></figure><p>查看设备状态</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mode</span></span><br></pre></td></tr></table></figure><p>修改cmd</p><p>修改窗口大小为80*40</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mode</span> <span class="number">80</span>,<span class="number">40</span></span><br></pre></td></tr></table></figure><p>修改颜色</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">color</span> /? # 查看帮助</span><br><span class="line"></span><br><span class="line"><span class="built_in">color</span> 背景色字体色</span><br><span class="line"># 需要连在一起 例如 <span class="built_in">color</span> <span class="number">12</span></span><br></pre></td></tr></table></figure><br><h2 id="ping命令"><a href="#ping命令" class="headerlink" title="ping命令"></a>ping命令</h2><p>在网络中ping是一个十分强大的TCP&#x2F;IP工具。它的作用主要为：</p><p>1、用来检测网络的连通情况和分析网络速度</p><p>2、根据域名得到服务器IP</p><p>3、根据ping返回的TTL值来判断对方所使用的操作系统及数据包经过路由器数量。</p><p>我们通常会用它来直接ping ip地址，来测试网络的连通情况。</p><br><p>查看帮助</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ping</span> /?</span><br></pre></td></tr></table></figure><h3 id="排查网络故障"><a href="#排查网络故障" class="headerlink" title="排查网络故障"></a>排查网络故障</h3><p>检查本地TCP&#x2F;IP协议是否安装正常</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ping</span> localhost</span><br></pre></td></tr></table></figure><p>检查网关连接是否畅通</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ping</span> <span class="number">192</span>.<span class="number">168</span>.<span class="number">1</span>.<span class="number">1</span></span><br></pre></td></tr></table></figure><p>检查电脑与外部网络连接是否畅通</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ping</span> www.baidu.com</span><br></pre></td></tr></table></figure><p>丢失率为0为正常</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> cmd </tag>
+            
+            <tag> windwos操作系统 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>python-爬虫</title>
       <link href="/2023/08/25/python/python-%E7%88%AC%E8%99%AB/"/>
       <url>/2023/08/25/python/python-%E7%88%AC%E8%99%AB/</url>
@@ -20,9 +41,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 爬虫 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       

@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>github相关</title>
+      <link href="/2023/08/29/github%E7%9B%B8%E5%85%B3/"/>
+      <url>/2023/08/29/github%E7%9B%B8%E5%85%B3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="上传项目"><a href="#上传项目" class="headerlink" title="上传项目"></a>上传项目</h1><p>…or create a new repository on the command line</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;# syt&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git branch -M main</span><br><span class="line">git remote add origin git@github.com:space7z/syt.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure><br><p>…or push an existing repository from the command line</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:space7z/syt.git</span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure><br><p>…or import code from another repository</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">You can initialize this repository with code from a Subversion, Mercurial, or TFS project.</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>自动化脚本编程之CMD/DOS命令行</title>
       <link href="/2023/08/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E4%B9%8BCMD-DOS%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
       <url>/2023/08/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E4%B9%8BCMD-DOS%E5%91%BD%E4%BB%A4%E8%A1%8C/</url>
@@ -41,9 +60,9 @@
       
         <tags>
             
-            <tag> 爬虫 </tag>
-            
             <tag> python </tag>
+            
+            <tag> 爬虫 </tag>
             
         </tags>
       

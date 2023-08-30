@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>hexo相关</title>
+      <link href="/2023/08/30/hexo%E7%9B%B8%E5%85%B3-1/"/>
+      <url>/2023/08/30/hexo%E7%9B%B8%E5%85%B3-1/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo相关</title>
+      <link href="/2023/08/30/hexo%E7%9B%B8%E5%85%B3/"/>
+      <url>/2023/08/30/hexo%E7%9B%B8%E5%85%B3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Butterfly主题"><a href="#Butterfly主题" class="headerlink" title="Butterfly主题"></a>Butterfly主题</h1><h2 id="添加音乐播放器"><a href="#添加音乐播放器" class="headerlink" title="添加音乐播放器"></a>添加音乐播放器</h2><ol><li>安装插件</li></ol><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure><br><ol start="2"><li>修改Hexo配置文件（_config.yml）</li></ol><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加刚刚用npm下载插件的配置在_config文件中,同时实现全局音乐</span></span><br><span class="line"><span class="comment"># 将asset_inject设置成false</span></span><br><span class="line"><span class="attr">aplayer:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">asset_inject:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure><br><ol start="3"><li>修改Butterfly主题配置文件</li></ol><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Inject the css and script (aplayer/meting)</span></span><br><span class="line"><span class="attr">aplayerInject:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># 开启音乐播放器</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">true</span> <span class="comment">#每个页面都有Aplayer</span></span><br></pre></td></tr></table></figure><br><ol start="4"><li>插入音乐信息在Butterfly主题配置文件</li></ol><p>音乐来源于网易云 data-id 可以通过分享复制该歌的链接 即可获取歌曲id<br>以单曲樱花樱花想见你为例</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Inject</span></span><br><span class="line"><span class="comment"># Insert the code to head (before &#x27;&lt;/head&gt;&#x27; tag) and the bottom (before &#x27;&lt;/body&gt;&#x27; tag)</span></span><br><span class="line"><span class="comment"># 插入代码到头部 &lt;/head&gt; 之前 和 底部 &lt;/body&gt; 之前</span></span><br><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">  <span class="attr">bottom:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;&lt;div class=&quot;aplayer no-destroy&quot; data-id=&quot;464916877&quot; data-server=&quot;netease&quot; data-type=&quot;song&quot; data-fixed=&quot;true&quot; data-autoplay=&quot;true&quot;&gt; &lt;/div&gt;&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><blockquote><p>注意：该数据类型是<strong>song</strong>类型</p></blockquote><br><ol start="5"><li>修改主题文件配置文件pjax</li></ol><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#实现不会因跳转其他页面而重新播放音乐</span></span><br><span class="line"><span class="comment">#相当于异步请求的ajax</span></span><br><span class="line"><span class="attr">pjax:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>github相关</title>
       <link href="/2023/08/29/github%E7%9B%B8%E5%85%B3/"/>
       <url>/2023/08/29/github%E7%9B%B8%E5%85%B3/</url>
@@ -60,9 +92,9 @@
       
         <tags>
             
-            <tag> python </tag>
-            
             <tag> 爬虫 </tag>
+            
+            <tag> python </tag>
             
         </tags>
       

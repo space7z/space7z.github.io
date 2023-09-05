@@ -1,0 +1,469 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>ysk-blog - for qxd</title><meta name="author" content="ysk"><meta name="copyright" content="ysk"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="ysk的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ysk-blog">
+<meta property="og:url" content="https://space7z.github.io/page/2/index.html">
+<meta property="og:site_name" content="ysk-blog">
+<meta property="og:description" content="ysk的个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://space7z.github.io/img/tx.jpg">
+<meta property="article:author" content="ysk">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://space7z.github.io/img/tx.jpg"><link rel="shortcut icon" href="/img/tx.jpg"><link rel="canonical" href="https://space7z.github.io/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"2RU78TJR66","apiKey":"ad104b5657bf73e7ea82ee7cbbefcf4d","indexName":"hexo","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ysk-blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-09-05 22:39:01'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/tx.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/video/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url('/img/background.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="ysk-blog"><span class="site-name">ysk-blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/video/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">ysk-blog</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/space7z" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:702010343@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/31/%E8%8B%B1%E8%AF%AD/%E5%8A%A8%E8%AF%8D%E8%BF%87%E5%8E%BB%E5%BC%8F-%E5%8A%A8%E8%AF%8D%E8%BF%87%E5%8E%BB%E5%88%86%E8%AF%8D%E4%B8%8D%E8%A7%84%E5%88%99%E5%8F%98%E5%8C%96%E8%A1%A8/" title="动词过去式-动词过去分词不规则变化表">动词过去式-动词过去分词不规则变化表</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-31T03:01:00.000Z" title="发表于 2023-08-31 11:01:00">2023-08-31</time></span></div><div class="content">
+
+
+
+
+AAA型（原形→原形→原形）
+
+
+
+动词原形
+过去式
+过去分词
+汉语意思
+
+
+
+cut
+cut
+cut
+割
+
+
+shut
+shut
+shut
+关上
+
+
+let
+let
+let
+让
+
+
+set
+set
+set
+安置
+
+
+hit
+hit
+hit
+打
+
+
+split
+split
+split
+劈开
+
+
+spit
+spit&#x2F;spat
+spit&#x2F;spat
+吐出
+
+
+quit
+quit&#x2F;quitted
+quit&#x2F;quitted
+放弃
+
+
+cast
+cast
+cast
+抛
+
+
+forecast
+forecast&#x2F;forecasted
+forecast&#x2F;forecasted
+预测
+
+
+broadcast
+broadcast&#x2F; broadcasted
+broadcast&#x2F; broadcasted
+广播
+
+
+cost
+cost
+cost
+花费
+
+
+burst
+burst
+burst
+突然发生
+
+
+bid
+bid&#x2F;bade
+bid&#x2F;bidden
+出价
+
+
+rid
+rid&#x2F;ridded
+rid ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/30/hexo%E7%9B%B8%E5%85%B3/" title="hexo相关">hexo相关</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-30T05:28:25.000Z" title="发表于 2023-08-30 13:28:25">2023-08-30</time></span></div><div class="content">Butterfly主题添加音乐播放器hexo-tag-aplayer官方github地址：
+https://github.com/MoePlayer/hexo-tag-aplayer
+
+安装插件
+
+1npm install --save hexo-tag-aplayer
+
+
+
+
+修改Hexo配置文件（_config.yml）
+
+12345# 添加刚刚用npm下载插件的配置在_config文件中,同时实现全局音乐# 将asset_inject设置成falseaplayer:  enable: true  asset_inject: false
+
+
+
+
+修改Butterfly主题配置文件
+
+1234# Inject the css and script (aplayer/meting)aplayerInject:  enable: true # 开启音乐播放器  per_page: true #每个页面都有Aplayer
+
+
+
+
+插入音乐信息在Butterfly主题配置文件
+
+音乐来源于网易云 data-id 可以通过分享复制该歌的链接 即可获取歌曲id以单曲樱花樱花想见你为例
+12345 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/29/github%E7%9B%B8%E5%85%B3/" title="github相关">github相关</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-29T03:07:50.000Z" title="发表于 2023-08-29 11:07:50">2023-08-29</time></span></div><div class="content">上传项目…or create a new repository on the command line
+1234567echo &quot;# syt&quot; &gt;&gt; README.mdgit initgit add README.mdgit commit -m &quot;first commit&quot;git branch -M maingit remote add origin git@github.com:space7z/syt.gitgit push -u origin main
+
+
+
+…or push an existing repository from the command line
+123git remote add origin git@github.com:space7z/syt.gitgit branch -M maingit push -u origin main
+
+
+
+…or import code from another repository
+1You can initialize this repository with code  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E4%B9%8BCMD-DOS%E5%91%BD%E4%BB%A4%E8%A1%8C/" title="自动化脚本编程之CMD/DOS命令行">自动化脚本编程之CMD/DOS命令行</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-28T12:59:17.000Z" title="发表于 2023-08-28 20:59:17">2023-08-28</time></span></div><div class="content">cmd命令mkdir创建文件夹1mkdir d:\ping
+
+
+
+dir查看目录列表1dir d:\
+
+
+
+cmd变量设置变量
+1set 变量名 = 值
+
+删除变量
+1set 变量名=
+
+获取变量
+1set 变量名
+
+
+
+运算
+12set /a 1+2set /a var = 1+2
+
+
+
+bat脚本文件
+运算进行输出
+1234@echo offset /a var=4*5echo %var%pause &gt;nul
+
+
+
+接收用户输入
+需要编码为ansi
+1234@echo offset /p var=请输入一个数字：echo 您输入的数字是：%var%pause &gt;nul
+
+
+
+
+
+自定义窗口设置窗口标题
+1title cmd xxx
+
+查看设备状态
+1mode
+
+修改cmd
+修改窗口大小为80*40
+1mode 80,40
+
+修改颜色
+1234color /? # 查看帮助color 背景色字体色# 需要连在一起 例如 color 12
+
+
+
+
+
+ping命令在网络中ping是一个十分强大的TCP&#x2F;IP工具。它的作用主要为：
+1、用来检测网络的连通情况和分析网络 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/25/python/python-%E7%88%AC%E8%99%AB/" title="python-爬虫">python-爬虫</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-25T08:51:49.000Z" title="发表于 2023-08-25 16:51:49">2023-08-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/python/">python</a></span></div><div class="content">urllib基本使用12345678910111213import urllib.requesturl = &#x27;http://www.baidu.com&#x27;# 模拟浏览器向服务器发送请求response = urllib.request.urlopen(url)# 获取页面源码# read()：返回字节形式的二进制数据# 二进制-&gt;字符串 解码：decode(&#x27;解码的格式&#x27;)conent = response.read().decode(&#x27;utf-8&#x27;)print(conent)
+
+
+
+一个类型和六个方法urllib.request
+一个类型：
+
+HTTPResponse类型
+
+六个方法：
+
+read()：一行一行读
+read(n)：读取n个字节
+readline()：一次读取一行
+readlines()：一次读取一行，读完为止
+getcode()：获取响应状态码
+geturl()：获取url地址
+getheaders()：获取一个状态信息
+
+12345678910111213141516171819import urlli ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/21/python/Python-Flask%E6%A1%86%E6%9E%B6%E8%AF%A6%E8%A7%A3/" title="Python-Flask框架详解">Python-Flask框架详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-21T04:10:54.000Z" title="发表于 2023-08-21 12:10:54">2023-08-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/python/">python</a></span></div><div class="content">Python Flask框架详解安装flask1pip install flask
+
+
+简单示例123456789from flask import Flaskapp = Flask(__name__)@app.route(&#x27;/&#x27;)def hello_world():   return &#x27;Hello World&#x27;if __name__ == &#x27;__main__&#x27;:   app.run()
+
+
+
+
+代码解析：1、首先我们导入了 Flask 类。 该类的实例将会成为我们的 WSGI 应用。2、接着我们创建一个该类的实例。第一个参数是应用模块或者包的名称。如果你使用 一个单一模块（就像本例），那么应当使用 name ，因为名称会根据这个 模块是按应用方式使用还是作为一个模块导入而发生变化（可能是 ‘main’ ， 也可能是实际导入的名称）。这个参数是必需的，这样 Flask 才能知道在哪里可以 找到模板和静态文件等东西3、然后我们使用 route() 装饰器来告诉 Flask 触发函数的 URL 。4、函数名称被用于生成相关联的 U ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/21/%E5%89%8D%E7%AB%AF/10%E5%88%86%E9%92%9F%E5%AD%A6%E4%BC%9A%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E7%9A%84%E4%B8%80%E5%88%87/" title="10分钟学会网络请求的一切">10分钟学会网络请求的一切</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-21T03:15:53.000Z" title="发表于 2023-08-21 11:15:53">2023-08-21</time></span></div><div class="content">10分钟学会网络请求Ajax请求get请求
+1234567891011121314151617181920const xhr = new XMLHttpRequest()// 配置请求方式、请求地址xhr.open(&#x27;GET&#x27;,&#x27;http://localhost:5000&#x27;,true)// 配置请求头xhr.setRequestHeader(&#x27;Content-Type&#x27;,&#x27;application/json&#x27;)xhr.setRequestHeader(&#x27;Access-Control-Allow-Origin&#x27;,&#x27;*&#x27;)// 发送请求xhr.send()// 请求状态xhr.onreadystatechange = function()&#123;        // 请求成功，状态码为200时执行    if(xhr.readyState === XMLHttpRequest.DONE &amp;&amp; xhr.status ===200)&#123;        ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/08/21/java/javaApi/" title="javaApi">javaApi</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-21T01:30:25.000Z" title="发表于 2023-08-21 09:30:25">2023-08-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java/">java</a></span></div><div class="content">BeanUtils来自spring-bean依赖
+拷贝共同属性
+1234import org.springframework.beans.BeanUtils;// 将v1的属性拷贝到v2BeanUtils.copyProperties(v1,v2);
+
+
+
+
+
+CollectionUtils来自spring-core依赖
+判断集合是否为空
+123import org.springframework.util.CollectionUtils;CollectionUtils.isEmpty(list)
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/tx.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ysk</div><div class="author-info__description">ysk的个人博客</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/space7z"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/space7z" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:702010343@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/05/%E5%89%8D%E7%AB%AF/ES6+%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="无题">无题</a><time datetime="2023-09-05T14:38:27.131Z" title="发表于 2023-09-05 22:38:27">2023-09-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/05/%E5%89%8D%E7%AB%AF/promise%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="无题">无题</a><time datetime="2023-09-05T14:37:47.465Z" title="发表于 2023-09-05 22:37:47">2023-09-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/05/%E5%89%8D%E7%AB%AF/vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="无题">无题</a><time datetime="2023-09-05T14:37:35.042Z" title="发表于 2023-09-05 22:37:35">2023-09-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/05/%E5%89%8D%E7%AB%AF/nodejs%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="无题">无题</a><time datetime="2023-09-05T14:37:24.211Z" title="发表于 2023-09-05 22:37:24">2023-09-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/05/java/SSM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="无题">无题</a><time datetime="2023-09-05T14:35:00.853Z" title="发表于 2023-09-05 22:35:00">2023-09-05</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java/"><span class="card-category-list-name">java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/python/"><span class="card-category-list-name">python</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/cmd/" style="font-size: 1.1em; color: #999">cmd</a> <a href="/tags/ajax/" style="font-size: 1.1em; color: #999">ajax</a> <a href="/tags/fetch-api/" style="font-size: 1.1em; color: #999">fetch api</a> <a href="/tags/python/" style="font-size: 1.5em; color: #99a9bf">python</a> <a href="/tags/flask/" style="font-size: 1.1em; color: #999">flask</a> <a href="/tags/english/" style="font-size: 1.1em; color: #999">english</a> <a href="/tags/windwos%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.1em; color: #999">windwos操作系统</a> <a href="/tags/hexo/" style="font-size: 1.1em; color: #999">hexo</a> <a href="/tags/maven/" style="font-size: 1.1em; color: #999">maven</a> <a href="/tags/github/" style="font-size: 1.1em; color: #999">github</a> <a href="/tags/axios/" style="font-size: 1.1em; color: #999">axios</a> <a href="/tags/vue/" style="font-size: 1.1em; color: #999">vue</a> <a href="/tags/ssm/" style="font-size: 1.1em; color: #999">ssm</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 1.1em; color: #999">爬虫</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><span class="card-archive-list-count">9</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">18</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-09-05T14:39:01.047Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By ysk</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="2062886130" data-server="netease" data-type="song" data-fixed="true" data-autoplay="true"> </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div></body></html>
